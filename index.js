@@ -22,6 +22,7 @@ function createEntry(){
     entryDiv.appendChild(dateDiv)
 
     let textDiv = document.createElement('div');
+    textDiv.classList.add('text-div');
     textDiv.textContent = entryText;
     entryDiv.appendChild(textDiv);
     let removeImg = document.createElement('img');
@@ -52,3 +53,7 @@ function clearTextArea(){
 }
 
 
+/**/
+
+
+*/

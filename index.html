@@ -7,23 +7,27 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="wrapper">
     <div id="nav-container">
+        <div class="heading-div">
         <h2>Entries</h2>
+        </div>
         <nav id="entry-nav">
         </nav>
     </div>
-    <section>
+    <section id="main-section">
     <h1>Daily Gratitude Journal</h1>
-    <form id="entry-form" >
+    <form id="entry-form" onsubmit="return false" >
         <input type="date" id="entry-date" placeholder="Click here to start typing" required>
-        <br>
+        
         <textarea id="entry-textbox" required></textarea>
-        <br>
+       
         <button id="add-post" onsubmit="return false">Add Entry</button>
         <!-- <input type="button" id="add-post" value="Add Entry"> -->
     </form>
     <div id="entry-container"></div>
     </section>
+    </div>
     
 <script src="index.js"></script>
 </body>
