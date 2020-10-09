@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="nav-container">
+        <h2>Entries</h2>
+        <nav id="entry-nav">
+        </nav>
+    </div>
+    <section>
+    <h1>Daily Gratitude Journal</h1>
+    <form id="entry-form" >
+        <input type="date" id="entry-date" placeholder="Click here to start typing" required>
+        <br>
+        <textarea id="entry-textbox" required></textarea>
+        <br>
+        <button id="add-post" onsubmit="return false">Add Entry</button>
+        <!-- <input type="button" id="add-post" value="Add Entry"> -->
+    </form>
+    <div id="entry-container"></div>
+    </section>
+    
+<script src="index.js"></script>
+</body>
+</html>
