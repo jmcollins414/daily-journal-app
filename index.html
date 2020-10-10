@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Crafty+Girls&family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <title>Document</title>
 </head>
 <body>
     <div id="wrapper">
+
     <div id="nav-container">
         <div class="heading-div">
         <h2>Entries</h2>
@@ -15,9 +17,10 @@
         <nav id="entry-nav">
         </nav>
     </div>
+    
     <section id="main-section">
-    <h1>Daily Gratitude Journal</h1>
     <form id="entry-form" onsubmit="return false" >
+        <h1>Daily Journal</h1>
         <input type="date" id="entry-date" placeholder="Click here to start typing" required>
         
         <textarea id="entry-textbox" required></textarea>
@@ -25,8 +28,12 @@
         <button id="add-post" onsubmit="return false">Add Entry</button>
         <!-- <input type="button" id="add-post" value="Add Entry"> -->
     </form>
-    <div id="entry-container"></div>
     </section>
+
+    <div id="new-entry-container">
+        <div id="entry-container"></div>
+    </div>
+   
     </div>
     
 <script src="index.js"></script>
